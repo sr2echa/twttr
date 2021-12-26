@@ -1,8 +1,8 @@
 {
   "name": "Twttr",
-  "short_name": "MinTwitter",
-  "description": "A minimal Twitter theme that drastically simplifies and declutters the new Twitter UI.",
-  "version": "3.1.6",
+  "short_name": "Twitter",
+  "description": "Twttr streamlines your twitter surfing process by prioritizing user-friendly features. Let's make twitter great again!",
+  "version": "1.0.0",
   "manifest_version": 2,
   "permissions": [
     "storage"
@@ -39,7 +39,7 @@
         "default": "Alt+Shift+T",
         "mac": "MacCtrl+Shift+T"
       },
-      "description": "Opens Minimal Twitter"
+      "description": "Opens Twttr"
     }
   },
   "options_ui": {
