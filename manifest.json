@@ -27,11 +27,11 @@
   ],
   "browser_action": {
     "default_icon": {
-      "800": "icon/800.png"
+      "500": "icon/500.png"
     }
   },
   "icons": {
-    "800": "icon/800.png"
+    "500": "icon/500.png"
   },
   "commands": {
     "_execute_browser_action": {
