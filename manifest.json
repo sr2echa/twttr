@@ -1,0 +1,49 @@
+{
+  "name": "Twttr",
+  "short_name": "MinTwitter",
+  "description": "A minimal Twitter theme that drastically simplifies and declutters the new Twitter UI.",
+  "version": "3.1.6",
+  "manifest_version": 2,
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "css": [
+        "minimal-twitter.css",
+        "./css/cozy.css"
+      ],
+      "js": [
+        "applyOptions.js",
+        "autoplayblock.js",
+        "utils.js"
+      ],
+      "matches": [
+        "https://twitter.com/*",
+        "https://*.twitter.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "800": "icon/800.png"
+    }
+  },
+  "icons": {
+    "800": "icon/800.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+T",
+        "mac": "MacCtrl+Shift+T"
+      },
+      "description": "Opens Minimal Twitter"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
