@@ -88,6 +88,8 @@ Feel free to make an PR along with details of the changes made :thumbsup:
 
 This Project Has Been **[GNU General Public Licensed](./License.md)**
 
+---
+
 <p align="center">
   <img alt="Badge" src="https://visitor-badges.glitch.me?username=sreechar&repo=twttr&label=Views&style=for-the-badge&color=%23457BFF&&logo=Github&contentType=svg">
 </p>
