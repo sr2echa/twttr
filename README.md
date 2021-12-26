@@ -88,6 +88,8 @@ Feel free to make an PR along with details of the changes made :thumbsup:
 
 This Project Has Been **[GNU General Public Licensed](./License.md)**
 
+<br>
+
 ---
 
 <br>
