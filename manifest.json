@@ -2,7 +2,7 @@
   "name": "Twttr",
   "short_name": "Twitter",
   "description": "Twttr streamlines your twitter surfing process by prioritizing user-friendly features. Let's make twitter great again!",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "permissions": [
     "storage"
@@ -10,13 +10,12 @@
   "content_scripts": [
     {
       "css": [
-        "minimal-twitter.css",
-        "./css/cozy.css"
+        "./css/twttr.css"
       ],
       "js": [
         "applyOptions.js",
-        "autoplayblock.js",
-        "utils.js"
+        "utils.js",
+        "./scripts/autoplayblock.js"
       ],
       "matches": [
         "https://twitter.com/*",
