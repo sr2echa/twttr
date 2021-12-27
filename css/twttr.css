@@ -1,0 +1,523 @@
+//
+//Scrollbar
+//
+html {
+  scroll-behavior: smooth;
+}
+/* Scrollbar size */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition: 1.0s;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 127, 127, 0.6);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 1.0s;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(110, 110, 110);
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+
+::-webkit-scrollbar-thumb:vertical:active,
+::-webkit-scrollbar-thumb:horizontal:active {
+    background: rgba(95, 91, 91, 1);
+
+}
+
+::-webkit-scrollbar-corner {
+    background: none;
+}
+
+
+
+main[role="main"] {
+  align-items: center !important;
+}
+
+main[role="main"] > div > div > div {
+  justify-content: center !important;
+}
+
+a[aria-label="Tweet"][role="button"] {
+  position: fixed !important;
+  right: 32px !important;
+  bottom: 24px !important;
+  max-width: 125px !important;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+a[data-testid="SideNav_NewTweet_Button"] {
+  position: fixed !important;
+  right: 32px !important;
+  bottom: 24px !important;
+  max-width: 125px !important;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@media all and (max-width: 800px) {
+  a[data-testid="SideNav_NewTweet_Button"] {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+  }
+
+  a[aria-label="Tweet"][role="button"] {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+  }
+}
+
+header[role="banner"] {
+  align-items: start !important;
+  max-width: 100px !important;
+}
+
+header[role="banner"] > div > div > div {
+  justify-content: space-between;
+  padding-top: 6px;
+}
+
+header[role="banner"] > div > div > div > div {
+  margin-top: 0 !important;
+}
+
+header[role="banner"] > div > div > div > div:nth-child(1) {
+  padding-top: 0 !important;
+}
+
+header[role="banner"]
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > nav
+  > a
+  > div
+  > div:nth-child(2),
+header[role="banner"]
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > nav
+  > div
+  > div
+  > div:nth-child(2) {
+  opacity: 0 !important;
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+header[role="banner"]
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > nav:hover
+  > a
+  > div
+  > div:nth-child(2),
+header[role="banner"]
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > nav:hover
+  > div
+  > div
+  > div:nth-child(2) {
+  opacity: 1 !important;
+}
+
+nav[aria-label="Primary"][role="navigation"] > a > div > div:nth-child(2),
+nav[aria-label="Primary"][role="navigation"] > div > div > div:nth-child(2) {
+  opacity: 0 !important;
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+nav[aria-label="Primary"][role="navigation"]:hover > a > div > div:nth-child(2),
+nav[aria-label="Primary"][role="navigation"]:hover
+  > div
+  > div
+  > div:nth-child(2) {
+  opacity: 1 !important;
+}
+
+div[data-testid="primaryColumn"],
+div[data-testid="primaryColumn"] > div > div,
+div[data-testid="primaryColumn"] > div > div > div:nth-child(2),
+div[data-testid="primaryColumn"] > div > div > div:nth-child(3),
+div[data-testid="primaryColumn"] > div > div > div:nth-child(4),
+div[data-testid="primaryColumn"] > div > div > div:nth-child(2) > div > div {
+  max-width: 700px;
+}
+
+div[data-testid="primaryColumn"] {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+div[data-testid="sidebarColumn"] {
+  visibility: hidden !important;
+  width: 120px !important;
+  z-index: 1;
+}
+
+div[aria-label="Timeline: Trending now"] {
+  display: none;
+}
+
+form[aria-label="Search Twitter"][role="search"] {
+  visibility: visible !important;
+  position: fixed !important;
+  max-width: 342px !important;
+  top: 8px;
+  right: 24px;
+}
+
+@media all and (max-width: 1300px) {
+  form[aria-label="Search Twitter"][role="search"] {
+    display: none !important;
+  }
+}
+
+form[aria-label="Search Twitter"][role="search"] > div:nth-child(1) > div {
+  background-color: transparent !important;
+}
+
+form[aria-label="Search Twitter"][role="search"] > div:nth-child(2) > div {
+  left: auto !important;
+}
+
+div[data-testid="sidebarColumn"] input[placeholder="Search Twitter"] {
+  width: 150px !important;
+}
+
+div[data-testid="sidebarColumn"] input[placeholder="Search Twitter"]:focus {
+  width: auto !important;
+}
+
+input[placeholder="Search Twitter"] {
+  padding-left: 34px !important;
+  margin-left: -24px !important;
+  z-index: 1 !important;
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+input[placeholder="Search Twitter"]::placeholder {
+  font-size: 15px !important;
+}
+
+input[placeholder="Search Twitter"]:focus {
+  padding-left: 10px !important;
+  margin-left: 0 !important;
+}
+
+@media all and (max-width: 1265px) {
+  div[data-testid="sidebarColumn"] {
+    visibility: hidden !important;
+    width: 100px !important;
+  }
+
+  form[aria-label="Search Twitter"][role="search"] {
+    visibility: hidden !important;
+  }
+}
+
+div[data-testid="primaryColumn"]
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > form[aria-label="Search Twitter"][role="search"] {
+  visibility: visible !important;
+  position: relative !important;
+  max-width: 100% !important;
+  top: auto;
+  right: auto;
+}
+
+@media all and (max-width: 1265px) {
+  div[data-testid="primaryColumn"]
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > form[aria-label="Search Twitter"][role="search"] {
+    visibility: visible !important;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  div[data-testid="primaryColumn"]
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div
+    > form[aria-label="Search Twitter"][role="search"] {
+    display: block !important;
+  }
+}
+
+div[data-testid="primaryColumn"]
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > form[aria-label="Search Twitter"][role="search"]
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > input[placeholder="Search Twitter"] {
+  width: 100% !important;
+}
+
+div[data-testid="primaryColumn"]
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > form[aria-label="Search Twitter"][role="search"]
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > input[placeholder="Search Twitter"]:focus {
+  width: 100% !important;
+}
+
+div[data-testid="primaryColumn"]
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > form[aria-label="Search Twitter"][role="search"]
+  > div:nth-child(2)
+  > div {
+  max-width: 100%;
+}
+
+div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(2),
+div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(3) {
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+div[data-testid="SideNav_AccountSwitcher_Button"]:hover > div:nth-child(2),
+div[data-testid="SideNav_AccountSwitcher_Button"]:hover > div:nth-child(3) {
+  opacity: 1;
+}
+
+div[data-testid="primaryColumn"] > div > div:nth-child(2) > div > div {
+  max-width: 100%;
+}
+
+svg[style="left: calc(105.5px);"] {
+  left: calc(17.5px) !important;
+}
+
+div[data-testid="DMDrawer"] {
+  visibility: hidden;
+}
+
+[data-testid="placementTracking"] article {
+  display: none;
+}
+
+[aria-label^="Timeline"][aria-label$="s Tweets"] h2,
+[aria-label^="Timeline"][aria-label$="s Tweets"] [data-testid="UserCell"],
+[aria-label^="Timeline"][aria-label$="s Tweets"]
+  [href^="/i/connect_people?user_id="] {
+  display: none;
+}
+
+[aria-label^="Timeline"][aria-label$="s Tweets"]
+  > div
+  > div
+  > div
+  section[aria-labelledby^="accessible-list-"][role="region"],
+[aria-label^="Timeline"][aria-label$="s Tweets"]
+  > div
+  > div
+  > div
+  > div
+  > div[dir="auto"][style="-webkit-line-clamp: 2;"]
+  > span,
+a[href="/i/flow/topics_selector"][role="link"],
+a[href^="/i/topics/picker"][role="link"] {
+  display: none;
+}
+
+[aria-label^="Timeline"][aria-label$="s Tweets"] > div > div > div > div {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+
+/* Hide promoted tweets */
+.bt--nopromoted [aria-label^="timeline" i][aria-label$="timeline" i] div[bt-promoted],
+.bt--nopromoted [aria-label^="timeline" i][aria-label$="tweets" i] div[bt-promoted] {
+	display: none;
+}
+
+/* Hide someone else's liked tweets showing in timelines */
+.bt--nolikedtweets [aria-label^="timeline" i][aria-label$="timeline" i] div[bt-likedtweet],
+.bt--nolikedtweets [aria-label^="timeline" i][aria-label$="tweets" i] div[bt-likedtweet] {
+	display: none;
+}
+
+/* Hide retweets */
+.bt--noretweets [aria-label^="timeline" i][aria-label$="timeline" i] div[bt-retweet],
+.bt--noretweets [aria-label^="timeline" i][aria-label$="tweets" i] div[bt-retweet] {
+	display: none;
+}
+
+/* Hide "Who to Follow" from users' timelines aside from search result timelines
+	 https://github.com/oslego/better-twitter/issues/12
+*/
+.bt--nowtf [aria-label^="timeline" i][aria-label$="timeline" i]:not([aria-label~="search" i]) div[bt-wtf],
+.bt--nowtf [aria-label^="timeline" i][aria-label$="tweets" i] div[bt-wtf] {
+	display: none;
+}
+
+/* Find "promoted" icons, then mark their ancestor <div> as a promoted tweet */
+.bt--nopromoted path[d^="M20.75"] {
+	animation: bt-marker-promoted 0s 1;
+}
+@keyframes bt-marker-promoted { to { outline-color: inherit } }
+
+/* Find "retweeted" icons, then mark their ancestor <div> as a retweet */
+.bt--noretweets path[d^="M23.615 15.477c-"] {
+	animation: bt-marker-retweet 0s 1;
+}
+@keyframes bt-marker-retweet { to { outline-color: inherit } }
+
+/* Find "liked tweet" icons next to "Someone liked" annotations, then mark their ancestor <div> as a retweet
+	 The  path for "filled heart" is identical to the one used when you yourself like a tweet.
+	 When the icon is used in context of the "Someone liked" annotation,
+	 the host <svg> is an only child of its parent so we can differentiate on that. This is fragile.
+
+	 FIXME: Find a way to match the tweet annotation container for "Someone liked" or "Someone retweeted".
+*/
+.bt--nolikedtweets svg:only-child path[d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12z"] {
+	animation: bt-marker-likedtweet 0s 1;
+}
+@keyframes bt-marker-likedtweet { to { outline-color: inherit } }
+
+/* Find "Follow" buttons, then mark their ancestor <div> as a who-to-follow prompt */
+.bt--nowtf [data-testid$="-follow"] {
+	animation: bt-marker-wtf 0s 1;
+}
+@keyframes bt-marker-wtf { to { outline-color: inherit } }
+
+/* Find the "Who to follow" container from the sidebar */
+.bt--nowtf [aria-label*="who to follow" i]{
+	animation: bt-marker-wtf-sidebar 0s 1;
+}
+@keyframes bt-marker-wtf-sidebar { to { outline-color: inherit } }
+
+.bt--nowtf .bt-marker-wtf-sidebar {
+	display: none !important;
+}
+
+/* Hide "Trends for you" box */
+.bt--notrends [aria-label*="trending" i] {
+	display: none !important;
+}
+
+/* Hide "Footer" box */
+.bt--nofooter [aria-label="footer" i] {
+	display: none !important;
+}
+
+/* Hide tweet reply count */
+.bt--nopopularity [data-testid="reply"] span {
+	display: none !important;
+}
+
+/* Hide tweet retweet count */
+.bt--nopopularity [href$="/retweets"] span,
+.bt--nopopularity [data-testid="retweet"] span,
+.bt--nopopularity [data-testid="unretweet"] span {
+  display: none !important;
+}
+
+/* Hide tweet like count */
+.bt--nopopularity [data-testid="like"] span,
+.bt--nopopularity [data-testid="unlike"] span,
+/* Hide the likes count on a single tweet page, but not the Likes tab on the user profile page */
+.bt--nopopularity [href$="/likes"]:not([role="tab"]) span {
+	display: none !important;
+}
+
+/* Hide all profile stats from user cards */
+.bt--nofame [href$="/following"],
+.bt--nofame [href$="/followers"] {
+	display: none !important;
+}
