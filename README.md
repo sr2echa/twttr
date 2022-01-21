@@ -1,3 +1,19 @@
+<h1 align="center">
+  <samp>⚠️ <b> Twttr </b> Needs your help!</samp>
+  
+  [[Sponsor The Project]](https://sponsor.sreecha.me)
+  
+</h1>
+<h3 align="center">
+  
+  Learn More about it [[here]](support.md#readme)
+  
+</h3>
+
+<br>
+
+---
+
 <p align="center">
   <img alt="Twttr Icon" src="./icon/500.png"/ width=320>
 </p>
