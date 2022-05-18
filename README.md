@@ -40,7 +40,7 @@ __Note :__ Cozy themes removes twitter metrics [i.e. number of likes, follows, r
 ## 📥 Installation
 
 - [Chrome Extension](#chrome)
-- ~~Firefox Add-on : Soon:tm:~~ [Firefox Extention](https://addons.mozilla.org/en-US/firefox/addon/twttr/)
+- [Firefox Extention](https://addons.mozilla.org/en-US/firefox/addon/twttr/)
 
 ### Chrome
 - ~~[Download Chrome extension in the Chrome Web Store]()~~ Soon:tm: <br>
